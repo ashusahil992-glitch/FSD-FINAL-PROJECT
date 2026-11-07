@@ -6,3 +6,9 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create-drop
+
+app:
+  jwt:
+    secret: campusbazaar-test-signing-key-at-least-32-characters
+  verification:
+    storage-directory: ${java.io.tmpdir}/campusbazaar-test-private-documents
